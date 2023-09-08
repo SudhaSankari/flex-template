@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapleex</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin:0;
+    }
+    img{
+        max-width: 100%;
+    }
+    .fluid{
+        background-color: #048276;
+        padding:40px 80px;
+        width:100%;
+    }
+    .box{
+        background-color: rgb(209 237 177);
+        padding:25px;
+        width:100%;
+        text-align: center;
+    }
+    .menu{
+        text-align: right;
+    }
+    .menu,.content,.last{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .menu  .menu1{
+        width:30%;
+    }
+    .menu  .menu2{
+        width:70%;
+    }
+    .menu1 h1{
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Forte;
+        color:rgb(220 26 92);
+        box-shadow: 10px 7px 13px 6px red;
+    }
+    .menu2 > div {
+        display:inline-block;
+        padding:5px;
+        margin:5px;
+        color:white;
+        background-color: #a0ef00;
+    }
+    .Heading{
+        font-size: xx-large;
+        font-family: Algerian;
+        text-align: center;
+        color:#f50557;
+    }
+    .Heading p{
+        text-shadow: 6px 0px 7px red;
+    }
+    .BigImage{
+       width:100%;
+       padding: 10px;
+    }
+    .row1{
+     display:flex;
+     flex-wrap:wrap;
+     margin-top:10px;
+    }
+    .row1 div{
+        width:33.3333333%;
+        padding:10px;
+    }
+    .row1 div > h2{
+        background-color: #038579;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+   .row1 div > p{
+    background-color: #038579;
+        margin-top: -6px;
+        padding:5px;
+        color:white;
+   }
+    .content div{
+        width:33.3333333%;
+        padding:10px;
+    }
+    .content div > p{
+        text-align: justify;
+        height: 80%;
+    }
+    .content div > h2{
+        background-color:   #038579;
+        margin-top: 20px;
+        margin-bottom: 0;  
+      }
+    .content div > p{
+        padding:15px;
+        margin-top: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .last div{
+        width:50%;
+        padding:10px;
+    }
+    ul{
+        margin:0;
+        padding:0;
+    }
+    .child1 p,.child2 h1,.child3 p,.child4 h1{
+        margin:0;
+    }
+    .child2 h1,.child4 h1{
+        color:#a0ef00;
+    }
+   .child1 p,.child3 p{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+   }
+   .child2 ul > li,.child4 ul > li{
+    color: white;
+   }
+   .div1 , .div2{
+        display: flex;
+       flex-wrap: wrap;
+       margin-top: 20px;
+   }
+  .div1 .child1 ,.div2 .child3{
+                 width:20%;
+                background-color: #a0ef00;
+  }
+ .div1 .child2 , .div2 .child4{
+                width:80%;
+                background-color: #048276;
+ }
+    .end div{
+        display:inline-block;
+        padding: 10px;margin-top: 20px;
+    }
+@media (max-width:768px){
+    .menu > .menu1,.menu > .menu2{
+        width:50%;
+    }
+    .row1 > div, .content > div,.last > .div1, .last > .div2, .end > div{
+        width:100%;
+    }
+}
+@media (max-width:576px){
+    .menu > .menu1,.menu > .menu2,.row1 > div, .content > div,.last > .div1, .last > .div2, .end > div{
+        width:100%;
+        padding:5px;
+    }
+}
+</style>
+<body>
+    <div class="fluid">
+        <div class="box">
+            <div class="menu">
+                <div class="menu1">
+                   <h1>Interior Designing</h1>
+               </div>
+               <div class="menu2">
+                <div>How it works</div>
+                <div>Portfolio</div>
+                <div>Kitchen Design</div>
+                <div>Living Room Design</div>
+                <div>Wardrobe Design</div>
+              </div>
+            </div>
+            <div class="Heading">
+                <p>MapleeX</p>
+            </div>
+            <div class="BigImage">
+                <img src="pic/backpic.jpg" alt="image is there">
+            </div>
+            <div class="row1">
+                <div>
+                    <h2>Full Home Interior</h2>
+                    <img src="pic/two.jpg"> 
+                    <p>Interiors of every nook and corner of your home</p>
+                </div>
+                <div>
+                    <h2>Commercial Interiors</h2>
+                    <img src="pic/one.jpg">
+                    <p>Hassle-free interior solution for your workspace</p>
+                </div>
+                <div>
+                    <h2>Furniture and Decor</h2>
+                    <img src="pic/three.jpg">
+                    <p>Complete your space with products from our store</p>
+                </div>
+            </div>
+            <div class="content">
+                 <div>
+                    <h2>Experienced Team</h2>
+                    <p>Choosing Interiordesignwala.com, you’re choosing experience.
+                        We have highly focused, reliable, creative and of course experienced interior designers with us,
+                         we are creating our excellence through our encounters with various kinds of clients, coping up with new trends and technology. 
+                         So experienced and updated we are both.</p>
+                 </div>
+                 <div>
+                    <h2>Budget oriented</h2>
+                    <p>Interior designing can be very expensive if we do not follow a proper budget,therefore we make a proper 
+                        budget of the interior to be done according to your preference and stick to that.
+                         We make cost-effective designs and take care of material used in terms of cost, quality and availability.</p>
+                 </div>
+                 <div>
+                    <h2>Free Consultation</h2>
+                   <p>We totally understand fears and queries when you are opting for designer,
+                      so first you can get a free consultation here to clarify all your queries and doubts. 
+                      We will brief you whole procedure our team follow to create lively interiors for our clients.</p>
+                 </div>
+            </div>
+            <div class="last">
+                <div class="div1">
+                    <div class="child1">
+                        <p>1</p>
+                    </div>
+                    <div class="child2">
+                       <h1>OUR COMPANY</h1>
+                        <ul>
+                           <li>About Us</li>
+                           <li>Career</li>
+                           <li>Media</li>
+                           <li>Blog</li>
+                           <li>Customer Stories</li>
+                           <li>Our Stores</li>
+                       </ul>
+                   </div>
+                </div>
+                <div class="div2">
+                    <div class="child3">
+                        <p>2</p>
+                    </div>
+                    <div class="child4">
+                        <h1>PARTNERS</h1>
+                       <ul>
+                            <li>Become a Franchise</li>
+                            <li>Sell on MapleeX</li>
+                            <li>Design Partners</li>
+                            <li>Design Services</li>
+                      </ul>
+                </div>
+                </div>
+            </div>
+            <div class="end">
+                <div>REFER A FRIEND</div>
+                <div>T&C</div>
+                <div>PRIVACY POLICY</div>
+                <div>Copyright © MapleeX 2023</div>
+                <div>All Rights Reserved</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
