@@ -88,11 +88,12 @@
         background-color: #038579;
         margin-top: 0;
         margin-bottom: 0;
+        padding:10px;
     }
    .row1 div > p{
     background-color: #038579;
         margin-top: -6px;
-        padding:5px;
+        padding:15px;
         color:white;
    }
     .content div{
@@ -107,6 +108,7 @@
         background-color:   #038579;
         margin-top: 20px;
         margin-bottom: 0;  
+        padding:10px;
       }
     .content div > p{
         padding:15px;
@@ -125,6 +127,7 @@
     }
     .child1 p,.child2 h1,.child3 p,.child4 h1{
         margin:0;
+        padding: 5px;
     }
     .child2 h1,.child4 h1{
         color:#a0ef00;
@@ -140,6 +143,7 @@
    }
    .child2 ul > li,.child4 ul > li{
     color: white;
+    padding:2px;
    }
    .div1 , .div2{
         display: flex;
@@ -167,9 +171,46 @@
     }
 }
 @media (max-width:576px){
+    .fluid{
+        padding:15px 30px;
+    }
     .menu > .menu1,.menu > .menu2,.row1 > div, .content > div,.last > .div1, .last > .div2, .end > div{
         width:100%;
         padding:5px;
+    }
+    .menu > .menu2{
+        padding:10px;
+    }
+    .menu2{
+        text-align: center;
+    }
+    .box{
+        padding:10px;
+    }
+    .content div > h2{
+        padding:5px;
+    }
+    .row1 div > h2 {
+        padding:5px;
+    }
+    .row1 div > p {
+        padding:10px;
+    }
+    .content div > p {
+        padding:5px;
+    }
+    .content div > p {
+        margin-top: 10px;
+    }
+    .child2 ul > li, .child4 ul > li {
+        padding:0;
+    }
+    .child1 p{
+        height: 200px;
+    }
+   
+    .close{
+        margin-bottom: 10px;
     }
 }
 </style>
@@ -266,7 +307,7 @@
                 <div>T&C</div>
                 <div>Privacy Policy</div>
                 <div>Copyright © MapleeX 2023</div>
-                <div>All Rights Reserved</div>
+                <div class="close">All Rights Reserved</div>
             </div>
         </div>
     </div>
